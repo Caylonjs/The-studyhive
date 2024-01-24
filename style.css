@@ -1,10 +1,11 @@
 /* Your CSS code here */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-body {
-    margin:0px; /* Adjust the margin as needed */
+  body {
+    margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif; /* Fallback font */
-  }
+}
   
   header {
     display: flex;
@@ -123,7 +124,7 @@ main {
 }
 
 footer {
-  background-color: #DAA520; /* Honeycomb Brown footer background */
+  background-color: #FFFFCC; /* Honeycomb Brown footer background */
 }
 
 
@@ -169,36 +170,42 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 80px;
   max-width: 1200px; /* Set a maximum width for the hiw section */
   width: 100%; /* Take up the full width */
 }
 
 .hiw-item {
   flex: 0 0 calc(30% - 20px);
-  margin-bottom: 5px;
+  /* Adjust the margin between items as needed */
+  margin-bottom: 10px; /* Adjust the margin between rows as needed */
+  margin-left: -75px;
   text-align: center;
 }
 
 .hiw img {
-  max-width: 100%;
-  max-height: 100%;
+  height: 250px;
+  width: 250px;
   object-fit: contain;
   margin-bottom: -10px;
+  margin-right: -20px;
 }
-.hiw p{
+
+.hiw p {
   color: #fff;
 }
+
+
 .titles {
   font-family: 'Caveat', cursive; /* Caveat font */
   font-size: 50px; /* Adjust the size as needed */
   margin-bottom: 27px; /* Add spacing below the h2 */
-
+text-align: center;
   margin-right: 5px;
   margin-top: 100px;
   color: #57423E;
   border-radius: 80px;
-  padding: 10px 20px;
+  
   background-color: #FFFFCC;
   
 }
@@ -227,31 +234,165 @@ footer {
 }
 
 
+
+.team div img,
+.team div p {
+    background-color: #FFFFCC;
+    border-radius: 100px; /* Adjust the border-radius for softer edges */
+    padding: 10px; /* Adjust padding as needed for spacing */
+    display: inline-block; /* Ensure the elements are inline-block to have square dimensions */
+    text-align: center;
+    line-height: 25px;
+}
+
 .team {
-  margin-top: 30px;
-  margin-left: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 0px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.team-member {
+  text-align: center;
+  margin: 10px;
+}
+
+.team-member img {
+  width: 250px; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: -10px;
+  margin-right: 10px;
+}
+
+.team-member p {
+  color:#333333;
  
 }
 
-.team span {
-  display: flex;
-  justify-content: space-around;
-  
+/* Your existing CSS code here */
+
+/* Your existing CSS code here */
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+body{
+  margin: 0px;
 }
 
-.team div {
-  text-align: center;
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 
+  h1 li {
+    margin-left: 20px;
+    font-size: 50px;
+  }
+
+  .header-img {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+
+  .header-img a {
+    margin-top: -125px;
+ text-align: center;
+ margin-bottom: 40px;
+  padding-right: px;
+  width: 350px;
+  margin-left: 50px;
+
+  }
+
+  .header-img img {
+    width: 80%;
+    height: auto;
+  }
+
+  .ms img {
+    height: 150px;
+    margin-top: -60px;
+    display: none;
+  }
+
+  .ms p{
+ margin-left: 0px;
+    text-align: left;
+
+  }
+
+  .hiw {
+    margin-left: 20px;
+  }
+
+  .hiw-item {
+    flex: 0 0 100%;
+    margin-left: 0;
+  }
+
+  .hiw img {
+    width: 300px;
+    height: auto;
+    margin-bottom: -10px;
+    margin-right: 0;
+
+  }
+
+  .titles,
+  .titles2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .titles img,
+  .titles2 img {
+    height: 60px;
+  }
+
+  .team-member img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team div img,
+  .team div p {
+    background-color: #FFFFCC;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .team-member {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: -10px;
+    margin-right: 0;
+  }
+
+  .ms {
+    padding: 10px;
+  }
 }
 
-.team img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.team p {
-  margin: 0; /* Reset margin to remove default spacing */
-  margin-left: -190px;
-}

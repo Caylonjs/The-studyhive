@@ -1,5 +1,97 @@
-h1{
-    font: 1em sans-serif;
-    font-family: fantasy;
+/* Your CSS code here */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body {
+    margin:0px; /* Adjust the margin as needed */
+    font-family: 'Arial', sans-serif; /* Fallback font */
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFD571; /* Warm background color */
+  }
+  
+  h1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #57423E; /* Dark brown text color */
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    font-family: 'Caveat', cursive; /* Cozy and legible font */
+    color: #57423E; /* Dark brown text color */
+    font-size: 57px;
     
-}
+  }
+  
+  li::before {
+    content: '\2022'; /* Unicode for a bullet point */
+    color: #E69D52; /* Light orange bullet point color */
+    font-size: 1.5em;
+    margin-right: 5px;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E69D52;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 2px solid #57423E; /* Dark brown border */
+  }
+  
+  img {
+    width: 100px;
+    height: auto;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #57423E; /* Dark brown text color */
+  }
+  
+  p {
+    color: #57423E; /* Dark brown text color */
+  }
+  
+  footer {
+    background-color: #57423E; /* Dark brown background color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  span {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Add spacing above the team section */
+  }
+  
+  span div {
+    text-align: center;
+  }
+  
+  span img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add spacing below each image */
+  }
+  
+  span p {
+    font-weight: bold;
+    margin: 0;
+  }
+  

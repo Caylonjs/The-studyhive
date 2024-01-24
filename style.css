@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #FFD571; /* Warm background color */
+    background-color:  #87CEEB; /* Warm background color */
   }
   
   h1 {
@@ -31,27 +31,33 @@ body {
     
   }
   
-  li::before {
-    content: '\2022'; /* Unicode for a bullet point */
-    color: #E69D52; /* Light orange bullet point color */
-    font-size: 1.5em;
-    margin-right: 5px;
-  }
+
   
   a {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #E69D52;
-    color: #fff;
+    padding: 10px 40px;
+    background-color:#FDD835;
+    color: #57423E;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
-    border: 2px solid #57423E; /* Dark brown border */
+    font-size: 50px;
+    border: 10px solid #57423E; /* Dark brown border */
+    font-family: 'Caveat', cursive; /* Cozy and legible font */
+    font-weight: bold;
+   
+  
+   
   }
   
   img {
-    width: 100px;
-    height: auto;
+  
+   width: 400px;
+   height: 400px;
+  }
+
+  div img {
+    margin-right: 200px;
+    margin-bottom: 100px;
   }
   
   main {
@@ -94,4 +100,39 @@ body {
     font-weight: bold;
     margin: 0;
   }
+
+
+
+/* Your existing CSS code here */
+
+.header-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-img a {
+  margin-top: -125px; /* Adjust the margin as needed */
+  margin-right:  190px;
+}
+
+a:hover {
+  background-color: #8F9805; /* Leaf green color on hover */
+} 
+
+h1 li u {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #8B4513; /* Beehive Brown background */
+}
+
+main {
+  background-color: #9370DB; /* Floral Lavender main content background */
+}
+
+footer {
+  background-color: #DAA520; /* Honeycomb Brown footer background */
+}
   
